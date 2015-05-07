@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"  id="PaneMain" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass"  
+            style="root" BorderPane.alignment="CENTER"  fx:controller="javafxapplication1.HomeScreenController">
+    <padding>
+        <javafx.geometry.Insets bottom="25" top="25" right="25" left="25"/>
+    </padding>
+    <left>
+        <GridPane vgap="10" hgap="10" id="profilePane" prefHeight="400.0" prefWidth="150.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" 
+                style="root" >
+            <padding>
+                <javafx.geometry.Insets bottom="25" top="25" right="25" left="25"/>
+            </padding>
+            <Label text="Profile" fx:id="profileName" GridPane.columnIndex="0" GridPane.rowIndex="0"  />
+            <Button fx:id="settingsButton" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button fx:id="addCourseButton" text="Add a course" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#addCourseClicked" />   
+        </GridPane>
+          
+    </left>
+    <center>
+        <GridPane vgap="10" hgap="10" id="contentPane" maxWidth="400"  prefHeight="400.0" prefWidth="100.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" 
+                  style="root" >
+             <padding>
+                <javafx.geometry.Insets bottom="25" top="25" right="25" left="25"/>
+            </padding>
+            <Label text="Content" GridPane.columnIndex="1" GridPane.rowIndex="0"  />
+            <Label text="Classes today" GridPane.columnIndex= "1" GridPane.rowIndex="1"/>
+            <ListView fx:id="classTodayList" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        </GridPane>
+    </center>
+    <!--    <Label text="Profile" GridPane.columnIndex="1" GridPane.rowIndex="0"  />-->
+    <stylesheets>
+        <URL value="@homescreen.css"/>
+    </stylesheets>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" id="Gridpane" alignment="CENTER" style="root" hgap="10" vgap="10" prefHeight="300.0" prefWidth="300.0" styleClass="mainFxmlClass" fx:controller="javafxapplication1.FXMLCreateLoginController">
+      <padding>
+        <javafx.geometry.Insets bottom="25" top="25" right="25" left="25"/>
+    </padding>
+    <Label text="Create a login" GridPane.columnIndex="0" GridPane.rowIndex="0" id="title" GridPane.columnSpan="2"  />
+    <Label text="User Name: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"  fx:id="userNameField"/>
+    <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="passWordField"/> 
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="3" text="Create Login" onAction="#createLoginSQL"  />
+    <stylesheets>
+        <URL value="@fxmlcreatelogin.css"/>
+    </stylesheets>
+</GridPane>

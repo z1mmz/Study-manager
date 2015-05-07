@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import  java.net.URL?>
+
+<GridPane id="gridpane" prefHeight="300" prefWidth="275" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController"
+          hgap="10" vgap="10" alignment="CENTER" style="root" >
+    <padding>
+        <javafx.geometry.Insets bottom="25" top="25" right="25" left="25"/>
+    </padding>
+    <children>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Welcome" fx:id="welcomeHeading" />   
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="User Name:"  />  
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="userNameField" />  
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Password: " />   
+        <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="passwordField"    />  
+      
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="3"   text="Login!" onAction="#handleButtonAction" fx:id="button" />
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"    text="Create a login" onAction="#handleNoLognButtonAction" fx:id="buttonNoLogin" />
+      <Hyperlink GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="loginMessage" visible="false"  onAction="#displayError"    />     
+   <Label GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"  text="" fx:id="errorMessage" visible="false"  /> 
+    </children>
+    <stylesheets>
+        <URL value="@LoginStyle.css"/>
+    </stylesheets>
+</GridPane>

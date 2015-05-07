@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#title{
+     -fx-font-size: 20px;
+     -fx-font-weight: bold;
+     
+}
+.label{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.root{
+     -fx-background-image: url("IMG/triangular.png");
+}
+.button{
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 0,0,0;
+}
+.button:hover{
+    -fx-background-color: #F4F6F7;
+}
