@@ -2,6 +2,9 @@
 .mainFxmlClass {
 
 }
+.GridPane{
+    -fx-background-color: white;
+}
 #title{
      -fx-font-size: 20px;
      -fx-font-weight: bold;
@@ -22,7 +25,5 @@
 }
 .button:hover{
     -fx-background-color: #F4F6F7;
-}/*
- * Empty Stylesheet file.
- */
+}
 

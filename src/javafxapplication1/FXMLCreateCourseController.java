@@ -7,7 +7,10 @@ package javafxapplication1;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -16,6 +19,8 @@ import javafx.fxml.Initializable;
  */
 public class FXMLCreateCourseController implements Initializable {
 
+    @FXML
+    private TextField courseNameField,courseCodeField;
     /**
      * Initializes the controller class.
      */
@@ -23,5 +28,9 @@ public class FXMLCreateCourseController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    public void addCourseClicked(ActionEvent event){
+        System.out.println("Create course: "+ courseNameField.getText());
+        
+    }
     
 }

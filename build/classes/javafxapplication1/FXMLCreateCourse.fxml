@@ -7,8 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane id="GridPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLCreateCourseController">
-    
+<GridPane id="CreateCoursePane" alignment="CENTER" vgap="10" hgap="10" prefHeight="400.0" prefWidth="600.0" style="root" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLCreateCourseController">
+    <Label text="Please fill in form below to add course" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" />
+    <Label text="Course name*" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="courseNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />     
+    <Label text="Course code" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="courseCodeField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Label text="MORE DETAILS TO COME" GridPane.columnIndex="0" GridPane.rowIndex="3"  />  
+    <Button text="Add course" onAction="#addCourseClicked" GridPane.columnIndex="2" GridPane.rowIndex="3"    />
     <stylesheets>
         <URL value="@fxmlcreatecourse.css"/>
     </stylesheets>
